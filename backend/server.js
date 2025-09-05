@@ -4,7 +4,7 @@ import todoRoutes from "./routes/todo.route.js";
 import { connectDB } from "./config/db.js";
 import cors from "cors";
 import path from "path";
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 dotenv.config();
 
@@ -26,5 +26,5 @@ if (process.env.NODE_ENV === "production") {
 
 app.listen(PORT, () => {
   connectDB();
-  console.log("Server started at http://localhost:5000");
+  console.log("Server started at http://localhost:3000");
 });
